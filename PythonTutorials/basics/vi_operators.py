@@ -110,3 +110,9 @@ print(id(num6))
 
 print(f"{num5} and {num6} are identical -->", num5 is num6)
 print(f"{num5} and {num6} are not identical -->", num5 is not num6)
+
+print("================")
+print(4+3%5)
+print(2**(3**2))
+print((2**3)**2)
+print(2**3**2)
