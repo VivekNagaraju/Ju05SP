@@ -14,7 +14,7 @@ Indentation: Space given at beginning of any statement to define a block/ group 
 
 1 indentation = 1 tab space/ 4 normal spaces
 '''
-age=int(input("Please enter your age:"))
+# age=int(input("Please enter your age:"))
 
 '''
 if age>18:
@@ -34,7 +34,7 @@ elif age <= 60:
 else:
     print("You're a senior citizen")
 '''
-
+'''
 if age <= 0:
     print("Please enter valid input")
 elif age > 18:
@@ -47,7 +47,17 @@ else:
         print("You're a child")
     else:
         print("You're a teenager")
+'''
 
+choice = int(input("""Do you want convert from:
+                1. Celsius to Fahrenhit
+                2. Fahernhit to Celsius"""))
+
+if choice == 1:
+    print("Converted to Fahrenhit")
+    
+if choice == 2:
+    print("Converted to Celsius")
 
     
     
