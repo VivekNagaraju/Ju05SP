@@ -16,6 +16,9 @@ Loop control statements/ keywords:
 1. Break: it breaks the execution of a loop upon some condition is met 
 2. Continue: skips the current execution of a loop based on a condition
 
+
+Pass
+
 Assignments:
 1. Using negative values in range()
 2. Using else block with for loop (with and without break)
@@ -28,10 +31,7 @@ range(-100, -1) --> Start=-100; Stop=-1; Step=+1(default value) --> Output
 Start value should be less than Stop value when step value is positive --> Increment Order. Ex: range(1, 100)
 Start value should be greater than Stop value when step value is negative --> Drecrement Order. Ex: range(100, 1, -1)
 
-* * * *
-* * * *
-* * * *
-* * * *
+
  
 '''
 '''
@@ -105,3 +105,27 @@ for i in range(2, 100, 2):
         continue
     print(i)
 '''
+'''
+for i in range(1, 10):
+    pass
+else:
+    print("Done")
+'''
+'''
+* * * *
+* * * *
+* * * *
+* * * *
+'''
+'''
+for j in range(4):
+    for i in range(4): # Print row of stars
+        print("*", end=" ") # Print star and keeps the cursor in the same line
+    print() #Doesn't print anything but takes cursor to the next line
+'''
+
+for i in range(4):
+    for j in range(4):
+        print("*", end=" ")
+    print()
+
