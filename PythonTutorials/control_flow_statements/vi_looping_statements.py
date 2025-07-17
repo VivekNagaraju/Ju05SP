@@ -116,6 +116,12 @@ else:
 * * * *
 * * * *
 * * * *
+
+1. Program starts
+2. Print 4 stars in a row/ print star 4 times in a row --> print("* * * *")/ for loop to print star
+3. Switch to next row --> print()
+4. Repeat steps 2, 3 three more times --> for loop has to be executed 4 times
+5. Program stops
 '''
 '''
 for j in range(4):
@@ -123,9 +129,14 @@ for j in range(4):
         print("*", end=" ") # Print star and keeps the cursor in the same line
     print() #Doesn't print anything but takes cursor to the next line
 '''
-
+'''
 for i in range(4):
     for j in range(4):
         print("*", end=" ")
     print()
+'''
+'''
+for i in range(4):
+    print(4*"* ")
+'''
 
