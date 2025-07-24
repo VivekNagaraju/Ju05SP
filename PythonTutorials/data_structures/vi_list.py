@@ -101,5 +101,56 @@ print("list3[9]",list3[9])
 print("list3[10]",list3[10])
 print("list3[11]",list3[11])
 
+print("Index of 4 is",list3.index(4))
+print("Index of 4 after 4 is",list3.index(4, 5))
+# print("Index of 4 b/w 5 and 10 is",list3.index(4, 5, 10))  # ValueError: 4 is not in list
+'''
+Assignment:
 
+1. Print a list to the user in the console (it should have duplicate elements)
+2. Ask user to choose a element from the list
+3. Print how many times that element is present in the list
+4. Print the indices of that element in the list
+5. Ask user to choose the index to remove the element present in that Index
+    (Give one default option as All. If user chooses this you should remove the element from indices)
+6. Ask user whether they want to repeat this exercise(Y/N)- 
+    if yes repeat else terminate the program
     
+    
+Try to use arithmetic operators with list
+'''
+list3.insert(3, 45)
+print("List3 after inserting 45 before index 3:", list3)
+
+print("popping element at index 5:",list3.pop(5))
+print("list3 after pop(5)", list3)
+
+print("list3.pop(): ",list3.pop())
+print("list3 after pop()", list3)
+
+list3.remove(2)
+print("list3 after removing 2:", list3)
+
+list3.reverse()
+print("list3 after reversing", list3)
+
+list3.pop(4)
+print("latest list3:", list3)
+
+list3.sort()
+print("list3 after sorting:", list3)
+
+list3.sort(reverse=True)
+print("sorting list in descending order:", list3)
+
+
+'''Create a new list from list2 by multiplying 2 to each element'''
+print("list2",list2)
+list7=[]
+for i in list2:
+    list7.append(i*2)
+print("list7:",list7)
+
+'''List comprehension- precise way of creating a list'''
+list8=[i*2 for i in list2]
+print("list8:", list8)
