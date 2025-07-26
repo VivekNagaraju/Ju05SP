@@ -48,7 +48,9 @@ num5 = num6 = 20
 print(num5)
 print(num6)
 
+
 num_list = 10, 20, 30, 40
 print(num_list)
 print(type(num_list))
 
+print('{a}, {0}, {abc}'.format(10, a=2.5, abc=[1,2]))

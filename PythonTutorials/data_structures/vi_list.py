@@ -32,7 +32,8 @@ print("list2 -->", list2)
 print(type(list2))
 
 '''Creation of list using built-in function'''
-list3 = list(range(10))
+# list3 = list(range(10))
+list3 = list({1, 2, 3, 4})
 print("list3 -->", list3)
 print(type(list3))
 list6 = list3.copy()
@@ -73,7 +74,7 @@ print("len(list3):",len(list3))
 
 """del()"""
 print(list3)
-del(list3[5])
+# del(list3[5])
 print(list3)
 
 '''List specific predefined functions'''
@@ -154,3 +155,5 @@ print("list7:",list7)
 '''List comprehension- precise way of creating a list'''
 list8=[i*2 for i in list2]
 print("list8:", list8)
+
+
