@@ -31,8 +31,12 @@ range(-100, -1) --> Start=-100; Stop=-1; Step=+1(default value) --> Output
 Start value should be less than Stop value when step value is positive --> Increment Order. Ex: range(1, 100)
 Start value should be greater than Stop value when step value is negative --> Drecrement Order. Ex: range(100, 1, -1)
 
+Generator Object:
+Ex: x=(i for i in range(3))
+"i for i in range(3)" --> generator expression
 
- 
+Generator object will generate the sequence only once unlike range()
+Generator object consumes very less memory
 '''
 '''
 count=0
@@ -139,4 +143,14 @@ for i in range(4):
 for i in range(4):
     print(4*"* ")
 '''
+x=(i for i in range(3)) # Generator object
+print(x)
+print(list(x))
+print(list(x))
+for i in x:
+    print(i)
+for i in x:
+    print(i)
 
+print(list(range(3)))
+print(list(range(3)))

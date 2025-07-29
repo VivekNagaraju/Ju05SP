@@ -70,5 +70,11 @@ while True:
         break
     print(i)
     i += 1
+'''    
+d={0:'a', 1:'b', 2:'c'}
+for x, y in d:
+    print(x,y)
     
-0O10 = 8
+for i in range(2.0):
+    print(i)
+'''
