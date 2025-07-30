@@ -81,6 +81,8 @@ print(list3)
 list3.append(15)
 print("After appending list3 with 15:",list3)
 
+
+print("list3+list2-->", list3+list2)
 list3.append(list2)
 print("After appending list3 with list2:",list3)
 
@@ -96,11 +98,13 @@ print("count of 2.3 in list5:",list5.count(2.3))
 list3.extend(list2)
 print("After extending list3 with list2:",list3)
 
+print("Concatination of list3 and list2",list3+list2)
+
 print("count of 4 in list3:",list3.count(4))
 
 print("list3[9]",list3[9])
-print("list3[10]",list3[10])
-print("list3[11]",list3[11])
+# print("list3[10]",list3[10])
+# print("list3[11]",list3[11])
 
 print("Index of 4 is",list3.index(4))
 print("Index of 4 after 4 is",list3.index(4, 5))
@@ -152,8 +156,17 @@ for i in list2:
     list7.append(i*2)
 print("list7:",list7)
 
+
+
 '''List comprehension- precise way of creating a list'''
 list8=[i*2 for i in list2]
 print("list8:", list8)
 
 
+print("======30/07/25=======")
+a=[0,1,2,3]
+for a[-1] in a: # 1. a[-1]=0 -> [0,1,2,0]; 2. a[-1]=1 -> [0,1,2,1]; 3. a[-1]=2 -> [0,1,2,2]; 4. a[-1]=2 -> [0,1,2,2]
+    print(a[-1])
+    print(a)
+
+print(a*2)
