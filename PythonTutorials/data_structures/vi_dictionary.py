@@ -78,3 +78,40 @@ for x, y in d:
 for i in range(2.0):
     print(i)
 '''
+'''Predefined functions'''
+print("======fromkeys======")   
+dict7=dict6.fromkeys([1.0, 2.0, 3.0, 4.0], "dummy") #Create a new dictionary with keys from iterable and values set to value.
+print("dict6-->", dict6)
+print("dict7-->", dict7)
+
+print("======get()======")
+print(dict6.get(4, "Key is not present")) # Return the value for key if key is in the dictionary, else default.
+print(dict6.get(5, "Key is not present"))
+
+print("=======items()======")
+print(dict6.items())
+
+print("=======keys()======")
+print(dict6.keys())
+
+print("=======values()======")
+print(dict6.values())
+
+print("=======iterating over values of a dictionary======")
+for i in dict6.values():
+    print(i)
+    
+print("=======update() from a dictionary======")
+print("dict6-->", dict6)
+print("dict7-->", dict7)    
+dict6.update(dict7)
+print("dict6 after update(dict7)", dict6)
+
+print("=====Update from an iterable=====")
+dict7.update([(1, 'Ganashree'), (2, 'Kannada Kasturi'), (3, 'Nithin'), (4, 'Vivek'), (50, 'Shreyas')])
+print("dict7-->", dict7)  
+
+print("======Update from keyword arguments======")
+dict6.update(one="Sanjana", two="Sharina", ten="Tejas")
+print("dict6-->", dict6)
+
