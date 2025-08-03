@@ -54,3 +54,15 @@ print(num_list)
 print(type(num_list))
 
 print('{a}, {0}, {abc}'.format(10, a=2.5, abc=[1,2]))
+
+a = 10
+b = a
+
+print(id(a))
+print(id(b))
+
+b = 20
+print("a-->", a)
+print(id(a))
+print("b-->", b)
+print(id(b))

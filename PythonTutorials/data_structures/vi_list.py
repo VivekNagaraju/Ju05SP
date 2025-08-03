@@ -170,3 +170,27 @@ for a[-1] in a: # 1. a[-1]=0 -> [0,1,2,0]; 2. a[-1]=1 -> [0,1,2,1]; 3. a[-1]=2 -
     print(a)
 
 print(a*2)
+
+
+names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
+names2 = names1
+names3 = names1[:]
+
+print('names1: ', names1)
+print(id(names1))
+print('names2: ', names2)
+print(id(names2))
+print('names3: ', names3)
+print(id(names3))
+
+
+names2[0] = 'Alice' # ['Alice', 'Bear', 'Charlton', 'Daman']
+names3[1] = 'Bob'    # ['Amir', 'Bob', 'Charlton', 'Daman']
+names1[0] = 'Alice2'
+
+print('names1: ', names1)
+print(id(names1))
+print('names2: ', names2)
+print(id(names2))
+print('names3: ', names3)
+print(id(names3))
