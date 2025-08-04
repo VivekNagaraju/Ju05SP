@@ -173,8 +173,8 @@ print(a*2)
 
 
 names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
-names2 = names1
-names3 = names1[:]
+names2 = names1 # call by reference --> whole object is passed --> original is modified
+names3 = names1[:] # copy of names1 is created --> original will not be modified
 
 print('names1: ', names1)
 print(id(names1))
@@ -186,7 +186,7 @@ print(id(names3))
 
 names2[0] = 'Alice' # ['Alice', 'Bear', 'Charlton', 'Daman']
 names3[1] = 'Bob'    # ['Amir', 'Bob', 'Charlton', 'Daman']
-names1[0] = 'Alice2'
+# names1[0] = 'Alice2'
 
 print('names1: ', names1)
 print(id(names1))
@@ -194,3 +194,12 @@ print('names2: ', names2)
 print(id(names2))
 print('names3: ', names3)
 print(id(names3))
+
+
+names4=(1, 2, 3, 4)
+names5=names4
+
+print('names4: ', names4)
+print(id(names4))
+print('names5: ', names5)
+print(id(names5))
