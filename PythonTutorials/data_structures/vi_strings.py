@@ -55,14 +55,14 @@ string7 = " ".join(["Today", "is", "Saturday"])
 print("string7:", string7)
 
 print(string3.split(" "))
-print(string3.split(" ", 1))
+print("split(" ", 1)-->",string3.split(" ", 3))
 
 print(string6.strip("="))
 print(string6.lstrip("="))
 print(string6.rstrip("="))
 
 print(string3.partition(" "))
-print(string3.partition("*"))
+print("partition('*')-->",string3.partition("*"))
 
 print(string3.rpartition(" "))
 print(string2.splitlines())
