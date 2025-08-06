@@ -37,5 +37,13 @@ Syntax:
     function_name --> function name --> mandatory
     () --> mandatory
     parameters --> depends on how they are defined
+    
+Types of functions:
+
+1. Pre-defined functions: already/ readily available in Python Package
+    - built-in functions
+    - Ex: print(), type(), len()...
+    
+2. User defined functions: defined by users
 
 '''
