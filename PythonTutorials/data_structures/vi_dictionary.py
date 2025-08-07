@@ -112,6 +112,6 @@ dict7.update([(1, 'Ganashree'), (2, 'Kannada Kasturi'), (3, 'Nithin'), (4, 'Vive
 print("dict7-->", dict7)  
 
 print("======Update from keyword arguments======")
-dict6.update(one="Sanjana", two="Sharina", ten="Tejas")
+dict6.update(one="Sanjana", two="Sharina", ten="Tejas", three="Nithin")
 print("dict6-->", dict6)
 
