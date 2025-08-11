@@ -18,12 +18,20 @@ Because:
     
 If we keenly observe any object is a member of larger type/ category/ class.
 
-We decided to first define a class consisting of features and functions.
+Objects of one class/ category share common features and functionalities/ behaviors
+
+We decided to first define a 'Class' consisting of common features and functions.
 
 Then using this class as blueprint/ mould to create distinct/separate objects of that class.
 
-
-
+Fundamental concepts in OOPS:
+1. Class
+2. Objects- derived entities/ instance of a class
+>>Four pillars of OOPS:
+3. Inheritance
+4. Polymorphism
+5. Abstraction - interface
+6. Encapsultion
 
     
     

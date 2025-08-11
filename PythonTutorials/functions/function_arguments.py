@@ -48,6 +48,7 @@ add()
 add(4)    
 add(4, 5)
 add(4, 5, 6)
+add(4, 10)
 # add(4, 5, b=10) # TypeError: add() got multiple values for argument 'b'
 
 sub(6, 3) # a=6 ; b=3 # Positional arguments
