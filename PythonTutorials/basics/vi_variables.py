@@ -51,7 +51,7 @@ print(num6)
 
 num_list = 10, 20, 30, 40
 print(num_list)
-print(type(num_list))
+print(type(num_list)) # <class 'tuple'>
 
 print('{a}, {0}, {abc}'.format(10, a=2.5, abc=[1,2]))
 

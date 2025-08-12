@@ -49,8 +49,8 @@ b = True # Boolean
 c = False # Boolean
 d = None # None type
 
-print("Type of student is",type(student))
-print("Type of roll_no is",type(roll_no))
+print("Type of student is",type(student)) # <class 'str'>
+print("Type of roll_no is",type(roll_no)) # <class 'int'>
 print("Type of age is",type(age))
 print("Type of a is",type(a))
 print("Type of b is",type(b))

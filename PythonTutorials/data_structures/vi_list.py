@@ -24,7 +24,9 @@ List is mutable: existing list can be modified
 '''Creation of empty list'''
 list1 = []
 print("list1 -->", list1)
-print(type(list1))
+print(type(list1)) # <class 'list'>
+# list1 --> Object
+# list --> Class
 
 '''Creation of list with elements'''
 list2 = [1, 2, 3, 4, 5] # homogeneous list
@@ -35,7 +37,7 @@ print(type(list2))
 # list3 = list(range(10))
 list3 = list({1, 2, 3, 4})
 print("list3 -->", list3)
-print(type(list3))
+print("type(list3)", type(list3))
 list6 = list3.copy()
 '''Creation of heterogeneous list'''
 list4 = [1, 2.4, 4+9j, "vivek", True, None] # heterogeneous list

@@ -1,0 +1,29 @@
+'''
+Created on 12-Aug-2025
+
+Class creation:
+
+Syntax: 
+
+class ClassName:
+    def method_one(self):
+        pass
+        
+        
+class --> Keyword
+ClassName --> Each word of a ClassName should be capitalized(First letter should be in upper case, all other letters
+are in lower case). If there are multiple words in a ClassName they are not separated with space/underscore.
+method_one --> method is a function defined inside a class
+
+'''
+
+class Student:
+    def annouce_the_creation(self):
+        print("A new Student object is created")
+        
+student1 = Student() # creation of an Object called student1 from Student class
+student1.annouce_the_creation()
+
+print(type(student1)) # <class '__main__.Student'>
+# student1 --> Object
+# Student --> Class
