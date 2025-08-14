@@ -18,12 +18,14 @@ method_one --> method is a function defined inside a class
 '''
 
 class Student:
-    def annouce_the_creation(self):
-        print("A new Student object is created")
+    def annouce_the_creation(self, name):
+        print(f"A new Student object {name} is created")
         
 student1 = Student() # creation of an Object called student1 from Student class
-student1.annouce_the_creation()
+student1.annouce_the_creation("Vivek")
 
 print(type(student1)) # <class '__main__.Student'>
 # student1 --> Object
 # Student --> Class
+
+print(dir(student1))
