@@ -40,3 +40,8 @@ driver.switch_to.frame(0)
 # 9. Enter text
 multiple_iframe_input = driver.find_element(By.TAG_NAME, "input")
 multiple_iframe_input.send_keys("Vivek")
+
+'''
+//option[@value="blue"]//preceding-sibling::option[@value='red']
+//option[@value="yellow"]//following-sibling::option[@value='red']
+'''
