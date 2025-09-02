@@ -1,5 +1,5 @@
 '''
-Created on 01-Sep-2025
+Created on 02-Sep-2025
 
 @author: admin
 '''
@@ -7,6 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+from selenium.webdriver.common.keys import Keys
 
 # 1. Lauching Chrome Browser with desired capabilities
 options = webdriver.ChromeOptions()
@@ -21,16 +22,16 @@ driver.get("https://testautomationpractice.blogspot.com/2018/09/automation-form.
 # 3. Create ActionChains object
 actions = ActionChains(driver)
 
-# 4. Scrolling
-actions.scroll_by_amount(0, 1000).perform()
+# 4. Copy text from Field1 using Keyboard actions 
 
-# 4. Mouse Hover on Point me
-point_me_btn = driver.find_element(By.CLASS_NAME, 'dropbtn')
-actions.move_to_element(point_me_btn)
+# Ctrl+a 
+field1 = driver.find_element(By.ID, 'field1')
+actions.key_down(Keys.CONTROL, field1).send_keys('a').key_up(Keys.CONTROL).perform()
 
-time.sleep(3)
+# Ctrl+c
+actions.key_down(Keys.CONTROL).send_keys('c').key_up(Keys.CONTROL).perform()
 
-# 5. Double click on Copy Text button
-copy_text_btn = driver.find_element(By.XPATH, "//button[text()='Copy Text']")
-actions.double_click(copy_text_btn)
-actions.perform()
+# 5. Paste the text into Field2 using Keyboard actions--> Ctrl+v
+
+field2 = driver.find_element(By.ID, 'field2')
+actions.key_down(Keys.CONTROL, field2).send_keys('v').key_up(Keys.CONTROL).perform()
