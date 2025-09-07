@@ -1,5 +1,5 @@
 '''
-Created on 05-Sep-2025
+Created on 07-Sep-2025
 
 @author: admin
 '''
@@ -19,13 +19,16 @@ driver.implicitly_wait(5)
 # 2. Navigating to practice site
 driver.get("https://testautomationpractice.blogspot.com/2018/09/automation-form.html")
 
-# 3. Get text from a static web table cell
-table_cell = driver.find_element(By.XPATH, '//table[@name="BookTable"]/tbody/tr[2]/td[1]')
-table_cell_value = table_cell.text
-print(table_cell_value)
+# 3. Locate Datepicker2
+date_picker2 = driver.find_element(By.ID, 'txtDate')
 
 '''
-//td[contains(text(),'Mbps')]
-//td[contains(text(),'MB') and not(contains(text(), '/s'))]
-//*[@id="rows"]/tr[1]/td[1]//following-sibling::td[contains(text(),'Mbps')]
+# 4. Remove readonly attribute from date_picker2
+driver.execute_script("arguments[0].removeAttribute('readonly');", date_picker2)
+
+# 5. Enter date in date_picker2
+date_picker2.send_keys("13/09/2025")
 '''
+
+# 4. Enter date in date_picker2 using script
+driver.execute_script("arguments[0].value = arguments[1];", date_picker2, "13/09/2025")

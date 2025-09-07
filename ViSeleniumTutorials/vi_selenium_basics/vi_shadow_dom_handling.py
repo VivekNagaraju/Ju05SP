@@ -1,5 +1,5 @@
 '''
-Created on 05-Sep-2025
+Created on 07-Sep-2025
 
 @author: admin
 '''
@@ -19,13 +19,17 @@ driver.implicitly_wait(5)
 # 2. Navigating to practice site
 driver.get("https://testautomationpractice.blogspot.com/2018/09/automation-form.html")
 
-# 3. Get text from a static web table cell
-table_cell = driver.find_element(By.XPATH, '//table[@name="BookTable"]/tbody/tr[2]/td[1]')
-table_cell_value = table_cell.text
-print(table_cell_value)
+# 3. Locate the shadow host
+shadow_host = driver.find_element(By.ID, 'shadow_host')
 
-'''
-//td[contains(text(),'Mbps')]
-//td[contains(text(),'MB') and not(contains(text(), '/s'))]
-//*[@id="rows"]/tr[1]/td[1]//following-sibling::td[contains(text(),'Mbps')]
-'''
+# 4. Get the shadow root
+first_shadow_root = shadow_host.shadow_root
+
+# 5. Locate the element in shadow DOM using shadow root --> input text box
+shadow_input_txtbox = first_shadow_root.find_element(By.CSS_SELECTOR, "input[type=text]:nth-child(5)")
+# print(shadow_input_txtbox)
+shadow_input_txtbox.send_keys("Vivek")
+
+# 6. Get 'Mobiles' text
+span = first_shadow_root.find_element(By.CSS_SELECTOR, '#shadow_content > span')
+print(span.text)
