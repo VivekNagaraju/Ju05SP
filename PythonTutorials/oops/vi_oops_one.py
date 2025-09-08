@@ -17,6 +17,9 @@ method_one --> method is a function defined inside a class
 
 '''
 
+from oops.vi_types_of_variables import city
+print(city)
+
 class Student:
     def annouce_the_creation(self, name):
         print(f"A new Student object {name} is created")
