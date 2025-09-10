@@ -11,10 +11,20 @@ Types of Inheritance:
 mro() - Method Resolution Order
 '''
 class GrandParent:
+    def __init__(self, name):
+        self.name = name
+        print("This is GP constructor")
+        print(f"{self.name} object is created")
+        
     def gp_method(self):
         print("This is GP method")
         
 class Father(GrandParent):
+    def __init__(self,name, dob):
+        print("This is Father class constrcutor")
+        print(f"{name} is born on {dob}")
+        super().__init__(name)
+        
     def f_method(self):
         print("This is Father method")
         
@@ -33,16 +43,16 @@ class Child(Father, Mother):
         print("This is child method")
 
 print("======GrandParent Class=======")
-ajji = GrandParent()  
+ajji = GrandParent("ajji")  
 ajji.gp_method()    
 
 print("======Father Class=======")
-appa = Father()
+appa = Father("appa", "23/98/4653")
 appa.f_method()
 appa.gp_method()
 
 print("======Child Class=======")
-nanu = Child()
+nanu = Child("paapu", "23/87/5678")
 nanu.c_method()
 nanu.f_method()
 nanu.gp_method()
