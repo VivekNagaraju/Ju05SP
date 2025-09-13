@@ -27,6 +27,9 @@ obj1.calculate_percentage(100, 35, 75)
 obj1.calculate_percentage(100, 50, 100)
 print(obj1.name)
 print(Student.school_name)
+Student.school_name = "Infosys"
+print(Student.school_name)
+
 
 obj2 = Student("Sansri", 202)
 obj2.calculate_percentage(100, 100, 100)
