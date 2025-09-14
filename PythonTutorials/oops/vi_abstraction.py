@@ -39,3 +39,5 @@ class HatchBackCar(Car):
 swift=HatchBackCar()
 swift.move_forward()
 swift.drive_train()
+
+car1 = Car()
