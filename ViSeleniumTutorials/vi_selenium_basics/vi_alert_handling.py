@@ -29,7 +29,6 @@ driver.switch_to.alert.accept()
 # 5. Click on Confirmation Alert button
 confirmation_alert_btn = driver.find_element(By.ID, "confirmBtn")
 confirmation_alert_btn.click()
-
 time.sleep(5)
 
 '''
