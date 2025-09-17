@@ -33,3 +33,6 @@ print(Student.school_name)
 
 obj2 = Student("Sansri", 202)
 obj2.calculate_percentage(100, 100, 100)
+
+print(obj1.name)
+print(obj2.name)
