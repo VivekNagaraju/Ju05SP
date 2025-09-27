@@ -19,32 +19,43 @@
 @tag
 Feature: Login page feature
 
+	Background: Precodintion steps for Login Feature
+		Given Chrome browser is launched
+    When User navigates to OrangeHRM Login Page
+
   @tag1
   Scenario: Navigation to OrangeHRM Login Page
-    Given Chrome browser is launched
-    When User navigates to OrangeHRM Login Page
     Then User should see page title as OrangeHRM
 
   @Login
   Scenario: Validate the login to OrangeHRM
-    Given Chrome browser is launched
-    When User navigates to OrangeHRM Login Page
-    And User enters Username
+    When User enters Username
     And User enters Password
     And User clicks on Login button
     Then User should see /dashboard/index in the current page URL
 
-	@LoginWithParamters 
+  @LoginWithParamters
   Scenario: Validate the login to OrangeHRM with parameters
-    Given Chrome browser is launched
-    When User navigates to OrangeHRM Login Page
-    And User enters Username "Admin"
+    When User enters Username "Admin"
     And User enters Password "admin123"
     And User clicks on Login button
     Then User should see "/dashboard/index" in the current page URL
-    
-    
-    
+
+	@LoginUsingDDT
+  Scenario Outline: Validate the login to OrangeHRM using DDT
+    When User enters Username "<Username>"
+    And User enters Password "<Password>"
+    And User clicks on Login button
+    Then User should see "<URL>" in the current page URL
+
+    Examples: 
+      | Username | Password | URL              |
+      | Admin    | admin123 | /dashboard/index |
+      | Admins   | admin123 | auth/login       |
+      
+      
+      
+      
   #@tag2
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>
